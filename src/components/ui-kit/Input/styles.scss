@@ -1,4 +1,61 @@
+@mixin placeholder {
+  color: $gray;
+  font-weight: 500;
+}
+
 .input {
-  position: relative;
-  &__
+  &__small {
+    .input-field {
+      padding: 6px 10px;
+    }
+  }
+  &__large {
+    .input-field {
+      padding: 14px 11px;
+    }
+  }
+  &__default {
+    .input-field {
+      border-radius: 6px;
+    }
+  }
+  &__rounded {
+    .input-field {
+      border-radius: 17px;
+    }
+  }
+  &__icon {
+    position: relative;
+    .input-field {
+      padding-left: 32px;
+    }
+  }
+  &-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    margin-top: -7px;
+  }
+  &-field {
+    border: 1px solid $border-color;
+    background-color: $field-bg;
+    color: $base-color-black;
+    transition: box-shadow 0.3s;
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 6px $primary-light;
+    }
+    &::-webkit-input-placeholder {
+      @include placeholder;
+    }
+    &:-ms-input-placeholder {
+      @include placeholder;
+    }
+    &::-ms-input-placeholder {
+      @include placeholder;
+    }
+    &::placeholder {
+      @include placeholder;
+    }
+  }
 }

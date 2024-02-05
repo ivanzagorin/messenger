@@ -27,7 +27,7 @@
 
 <script lang="ts" setup>
 import { computed, defineProps, withDefaults } from "vue";
-import { Props } from "./interfaces";
+import { Props } from "./types";
 
 const imageAlt = 'Фото пользователя';
 
