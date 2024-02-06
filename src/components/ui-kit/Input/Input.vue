@@ -13,6 +13,7 @@
       v-bind="props"
       class="input-field"
       @input="updateModelValueHandler($event)"
+      @blur="blurHandler"
       @focus="focusHandler"
     >
   </div>
@@ -48,13 +49,14 @@ const icon = computed(() => {
   null;
 });
 
-const emit = defineEmits(['update:modelValue', 'focus']);
+const emit = defineEmits(['update:modelValue', 'focus', 'blur']);
 
 const updateModelValueHandler = (event: Event) => {
   const target = event.target as HTMLInputElement
   emit('update:modelValue', target.value);
 };
 
+const blurHandler = () => emit('blur');
 const focusHandler = () => emit('focus');
 
 defineOptions({ inheritAttrs: false });

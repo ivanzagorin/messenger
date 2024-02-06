@@ -40,10 +40,8 @@
     border: 1px solid $border-color;
     background-color: $field-bg;
     color: $base-color-black;
-    transition: box-shadow 0.3s;
     &:focus {
       outline: none;
-      box-shadow: 0 0 6px $primary-light;
     }
     &::-webkit-input-placeholder {
       @include placeholder;
