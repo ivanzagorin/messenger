@@ -1,5 +1,5 @@
 <template>
-  <div 
+  <div
     class="input"
     :class="classList"
   >
@@ -8,21 +8,21 @@
       class="input-icon"
       :src="icon"
       :alt="placeholder || type"
-    >
+    />
     <input
       v-bind="props"
       class="input-field"
       @input="updateModelValueHandler($event)"
       @blur="blurHandler"
       @focus="focusHandler"
-    >
+    />
   </div>
 </template>
 
 <script lang="ts" setup>
-import { Props, FieldSize, FieldTemplate } from "./types";
-import { computed, defineProps, withDefaults } from "vue";
-import searchIcon from "@/assets/images/icons/search.svg";
+import { Props, FieldSize, FieldTemplate } from './types';
+import { computed, withDefaults } from 'vue';
+import searchIcon from '@/assets/images/icons/search.svg';
 
 const ICONS = {
   search: searchIcon
@@ -43,16 +43,16 @@ const classList = computed(() => {
 });
 
 const icon = computed(() => {
-  if (ICONS.hasOwnProperty(props.type)) {
+  if (props.type in ICONS) {
     return ICONS[props.type as keyof typeof ICONS];
   }
-  null;
+  return null;
 });
 
 const emit = defineEmits(['update:modelValue', 'focus', 'blur']);
 
 const updateModelValueHandler = (event: Event) => {
-  const target = event.target as HTMLInputElement
+  const target = event.target as HTMLInputElement;
   emit('update:modelValue', target.value);
 };
 

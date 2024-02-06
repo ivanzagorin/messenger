@@ -1,3 +1,3 @@
-import ChatAside from "./ChatAside.vue";
+import ChatAside from './ChatAside.vue';
 
 export default ChatAside;

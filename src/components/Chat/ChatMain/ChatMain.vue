@@ -1,5 +1,1 @@
-<template>
-  <div>
-    ChatMain
-  </div>
-</template>
+<template>ChatMain</template>

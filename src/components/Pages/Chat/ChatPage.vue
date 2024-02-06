@@ -2,16 +2,16 @@
   <div class="chat">
     <div class="chat-aside">
       <ChatAside />
-    </div>    
+    </div>
     <div class="chat-main">
       <ChatMain />
-    </div>    
+    </div>
   </div>
 </template>
 
 <script lang="ts" setup>
-import ChatAside from "@/components/Chat/ChatAside";
-import ChatMain from "@/components/Chat/ChatMain";
+import ChatAside from '@/components/Chat/ChatAside';
+import ChatMain from '@/components/Chat/ChatMain';
 </script>
 
 <style lang="scss" scoped>

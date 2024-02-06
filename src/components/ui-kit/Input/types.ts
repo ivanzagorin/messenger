@@ -1,5 +1,5 @@
-import { InputTypeHTMLAttribute } from "vue";
-import { Booleanish, Numberish } from "@/types/base.types";
+import { InputTypeHTMLAttribute } from 'vue';
+import { Booleanish, Numberish } from '@/types/base.types';
 
 // TODO Wait for fix
 // [@vue/compiler-sfc] Failed to resolve extends base type. (vue InputHTMLAttributes)
@@ -9,7 +9,7 @@ interface InputHTMLAttributesCopy {
   autocomplete?: string;
   autofocus?: Booleanish;
   capture?: boolean | 'user' | 'environment';
-  checked?: Booleanish | any[] | Set<any>;
+  checked?: Booleanish | unknown[] | Set<unknown>;
   crossorigin?: string;
   disabled?: Booleanish;
   enterKeyHint?: 'enter' | 'done' | 'go' | 'next' | 'previous' | 'search' | 'send';
@@ -42,15 +42,15 @@ interface InputHTMLAttributesCopy {
 export enum FieldSize {
   SMALL = 'small',
   LARGE = 'large'
-};
+}
 
 export enum FieldTemplate {
   DEFAULT = 'default',
   ROUNDED = 'rounded'
-};
+}
 
 export interface Props extends InputHTMLAttributesCopy {
-  modelValue: any;
+  modelValue: unknown;
   fieldSize: FieldSize;
   template: FieldTemplate;
-};
+}

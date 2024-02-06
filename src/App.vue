@@ -1,11 +1,11 @@
 <template>
   <div class="app">
-    <Chat />
+    <ChatPage />
   </div>
 </template>
 
 <script lang="ts" setup>
-import Chat from "@/components/Pages/Chat";
+import ChatPage from '@/components/Pages/Chat';
 </script>
 
 <style lang="scss">
