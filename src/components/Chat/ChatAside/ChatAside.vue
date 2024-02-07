@@ -19,25 +19,13 @@
 </template>
 
 <script lang="ts" setup>
-import { ref } from "vue";
-import Avatar from "@/components/ui-kit/Avatar";
-import { Input, FieldSize, FieldTemplate} from "@/components/ui-kit/Input";
+import { ref } from 'vue';
+import Avatar from '@/components/ui-kit/Avatar';
+import { Input, FieldSize, FieldTemplate } from '@/components/ui-kit/Input';
 
 const search = ref('');
 </script>
 
 <style lang="scss" scoped>
-.aside {
-  border-radius: 8px 0px 0px 0px;
-  border: 1px solid $light-gray;
-  &-top {
-    display: flex;
-    align-items: center;
-    padding: 14px 16px 12px;
-    border-bottom: 1px solid $light-gray;
-    &__avatar {
-      margin-right: 15px;
-    }
-  }
-} 
+@import './styles';
 </style>

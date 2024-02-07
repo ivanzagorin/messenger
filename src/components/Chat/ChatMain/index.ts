@@ -1,3 +1,3 @@
-import ChatMain from "./ChatMain.vue";
+import ChatMain from './ChatMain.vue';
 
 export default ChatMain;

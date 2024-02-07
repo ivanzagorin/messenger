@@ -7,7 +7,7 @@
       :alt="abbreviation || imageAlt"
       width="40"
       height="40"
-    >
+    />
     <span
       v-else-if="abbreviation"
       class="avatar-abbreviation"
@@ -21,13 +21,13 @@
       :alt="imageAlt"
       width="40"
       height="40"
-    >
+    />
   </div>
 </template>
 
 <script lang="ts" setup>
-import { computed, defineProps, withDefaults } from "vue";
-import { Props } from "./types";
+import { computed, withDefaults } from 'vue';
+import { Props } from './types';
 
 const imageAlt = 'Фото пользователя';
 
