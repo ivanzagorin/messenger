@@ -1,12 +1,8 @@
 <template>
-  <div class="app">
-    <ChatPage />
-  </div>
+  <main class="app">
+    <router-view />
+  </main>
 </template>
-
-<script lang="ts" setup>
-import ChatPage from '@/components/Pages/Chat';
-</script>
 
 <style lang="scss">
 @import '@/assets/styles';
