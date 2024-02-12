@@ -1,0 +1,18 @@
+.user {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &-text {
+    width: calc(100% - 52px);
+  }
+  &-name {
+    @include nowrap;
+    font-weight: 500;
+    font-size: 1.1rem;
+  }
+  &-subtext {
+    @include nowrap;
+    color: $gray;
+    font-size: 0.9rem;
+  }
+}

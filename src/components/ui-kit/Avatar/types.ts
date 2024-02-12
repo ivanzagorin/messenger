@@ -1,8 +1,6 @@
-interface Props {
-  avatar?: string;
-  name?: string;
-  lastName?: string;
+export interface AvatarProps {
+  avatar?: string | null;
+  name?: string | null;
+  lastName?: string | null;
   online?: boolean;
-};
-
-export type { Props };
+}

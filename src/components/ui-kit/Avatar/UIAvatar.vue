@@ -27,14 +27,14 @@
 
 <script lang="ts" setup>
 import { computed, withDefaults } from 'vue';
-import { Props } from './types';
+import { AvatarProps } from './types';
 
 const imageAlt = 'Фото пользователя';
 
-const props = withDefaults(defineProps<Props>(), {
-  avatar: '',
-  name: '',
-  lastName: '',
+const props = withDefaults(defineProps<AvatarProps>(), {
+  avatar: null,
+  name: null,
+  lastName: null,
   online: false
 });
 

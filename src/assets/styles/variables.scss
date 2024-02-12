@@ -9,3 +9,9 @@ $primary: #7E72F2;
 $primary-light: rgba(127, 114, 242, 0.4);
 $success: #2DCD7A;
 $error: #EA5455;
+
+@mixin nowrap {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
