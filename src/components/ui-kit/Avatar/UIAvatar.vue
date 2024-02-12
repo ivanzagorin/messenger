@@ -22,6 +22,10 @@
       width="40"
       height="40"
     />
+    <div
+      v-if="online"
+      class="avatar-online"
+    ></div>
   </div>
 </template>
 
@@ -51,25 +55,5 @@ const abbreviation = computed(() => {
 </script>
 
 <style lang="scss" scoped>
-.avatar {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: $primary;
-  &-img {
-    border-radius: 50%;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    background: $base-color-white;
-  }
-  &-abbreviation {
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: $base-color-white;
-  }
-}
+@import './styles.scss';
 </style>

@@ -1,0 +1,32 @@
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $primary;
+  position: relative;
+  &-img {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background: $base-color-white;
+  }
+  &-abbreviation {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: $base-color-white;
+  }
+  &-online {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    right: -2px;
+    bottom: -2px;
+    border: 3px solid $base-color-white;
+    background-color: $success;
+  }
+}

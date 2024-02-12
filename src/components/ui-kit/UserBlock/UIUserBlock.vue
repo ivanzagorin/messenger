@@ -25,10 +25,10 @@
 
 <script lang="ts" setup>
 import { Avatar } from '@/components/ui-kit/Avatar';
-import { Props } from './types';
+import { UserBlockProps } from './types';
 import { withDefaults, computed } from 'vue';
 
-const props = withDefaults(defineProps<Props>(), {
+const props = withDefaults(defineProps<UserBlockProps>(), {
   avatar: null,
   name: null,
   lastName: null,

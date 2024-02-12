@@ -10,4 +10,18 @@
       margin-right: 15px;
     }
   }
+  &-list {
+    overflow-y: auto;
+    height: calc(100vh - 69px);
+  }
+  &-block {
+    padding-top: 14px;
+  }
+  &-title {
+    font-size: 1.4rem;
+    color: $primary;
+    font-weight: 600;
+    padding-left: 12px;
+    margin-bottom: 12px;
+  }
 }
