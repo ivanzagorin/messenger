@@ -93,7 +93,7 @@
 import { ref } from 'vue';
 import Avatar from '@/components/ui-kit/Avatar';
 import { Input, FieldSize, FieldTemplate } from '@/components/ui-kit/Input';
-import ChatItem from './ChatItem';
+import ChatItem from '@/components/Chat/ChatItem';
 
 const search = ref('');
 </script>

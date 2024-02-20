@@ -1,0 +1,44 @@
+@mixin commonStyles {
+  padding: 10px 11px;
+  line-height: 1.8;
+  border: 1px solid $border-color;
+}
+
+.textarea {
+  width: 100%;
+  position: relative;
+  &-field {
+    @include commonStyles;
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    background-color: $field-bg;
+    color: $base-color-black;
+    resize: none;
+    &:focus {
+      outline: none;
+    }
+    &::-webkit-input-placeholder {
+      @include placeholder;
+    }
+    &:-ms-input-placeholder {
+      @include placeholder;
+    }
+    &::-ms-input-placeholder {
+      @include placeholder;
+    }
+    &::placeholder {
+      @include placeholder;
+    }
+  }
+  &-substrate {
+    @include commonStyles;
+    word-break: break-word;
+    min-height: 48px;
+    max-height: 123px;
+    overflow: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
+}

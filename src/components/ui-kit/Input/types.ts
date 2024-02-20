@@ -49,7 +49,7 @@ export enum FieldTemplate {
   ROUNDED = 'rounded'
 }
 
-export interface Props extends InputHTMLAttributesCopy {
+export interface InputProps extends InputHTMLAttributesCopy {
   modelValue: unknown;
   fieldSize: FieldSize;
   template: FieldTemplate;

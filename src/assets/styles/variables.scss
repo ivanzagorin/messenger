@@ -23,3 +23,8 @@ $error: #EA5455;
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+@mixin placeholder {
+  color: $gray;
+  font-weight: 500;
+}

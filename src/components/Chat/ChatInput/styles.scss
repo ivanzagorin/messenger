@@ -1,0 +1,12 @@
+.chat-input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid $border-color;
+  background-color: $base-color-white;
+  &-field {
+    width: 100%;
+  }
+}

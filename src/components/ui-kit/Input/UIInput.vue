@@ -20,7 +20,7 @@
 </template>
 
 <script lang="ts" setup>
-import { Props, FieldSize, FieldTemplate } from './types';
+import { InputProps, FieldSize, FieldTemplate } from './types';
 import { computed, withDefaults } from 'vue';
 import searchIcon from '@/assets/images/icons/search.svg';
 
@@ -28,7 +28,7 @@ const ICONS = {
   search: searchIcon
 };
 
-const props = withDefaults(defineProps<Props>(), {
+const props = withDefaults(defineProps<InputProps>(), {
   type: 'text',
   fieldSize: FieldSize.LARGE,
   template: FieldTemplate.DEFAULT
